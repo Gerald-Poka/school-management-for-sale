@@ -1,0 +1,2 @@
+
+<?php echo $__env->make('website.each.services.service_1', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\Lifemate\Desktop\modern\resources\views/website/each/services.blade.php ENDPATH**/ ?>
