@@ -21,6 +21,8 @@ use App\Http\Controllers\Admin\TimetableController;
 use App\Http\Controllers\Admin\StudentController;
 use App\Http\Controllers\Student\SubjectController;
 use App\Http\Controllers\Admin\Finance\ReportController;
+use App\Http\Controllers\Student\ProfileController;
+use App\Http\Controllers\Admin\ResultController;
 
 Auth::routes();
 
@@ -225,6 +227,16 @@ Route::middleware(['auth', 'admin'])->group(function () {
         Route::get('students/{student}', [StudentController::class, 'show'])->name('students.show');
         Route::get('students/{student}/edit', [StudentController::class, 'edit'])->name('students.edit');
         Route::put('students/{student}', [StudentController::class, 'update'])->name('students.update');
+
+        // Results Management Routes
+        Route::get('/results', [ResultController::class, 'index'])->name('results.index');
+        Route::get('/results/create', [ResultController::class, 'create'])->name('results.create');
+        Route::post('/results', [ResultController::class, 'store'])->name('results.store');
+        Route::get('/results/students/{level}', [ResultController::class, 'getStudentsByLevel'])->name('results.students');
+
+        // Results Resource Routes
+        Route::resource('results', ResultController::class);
+        Route::get('/results/reports', [ResultController::class, 'reports'])->name('results.reports');
     });
 });
 
@@ -280,5 +292,7 @@ Route::prefix('student')->middleware(['auth', 'role:student'])->name('student.')
         ->name('invoices.submitPayment');
     Route::get('/payments', [App\Http\Controllers\Student\PaymentController::class, 'index'])->name('payments.index');
     Route::get('/profile', [ProfileController::class, 'index'])->name('profile.index');
+    Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::get('/results', [App\Http\Controllers\Student\ResultController::class, 'index'])->name('results.index');
 });

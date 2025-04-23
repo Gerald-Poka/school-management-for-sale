@@ -22,7 +22,14 @@
                             $timetable = $timetables->where('academic_level_id', $level->id)->first();
                         @endphp
                         <div class="mb-4">
-                            <h4>{{ $level->name }} Timetable</h4>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4>{{ $level->name }} Timetable</h4>
+                                @if($timetable)
+                                    <a href="{{ route('admin.timetables.edit', $timetable->id) }}" class="btn btn-sm btn-primary">
+                                        <i class="bx bx-edit"></i> Edit Timetable
+                                    </a>
+                                @endif
+                            </div>
                             @if($timetable)
                                 <div class="table-responsive">
                                     <table class="table table-bordered table-striped">

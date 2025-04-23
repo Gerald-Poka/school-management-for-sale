@@ -229,6 +229,52 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card card-animate">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="fw-medium text-muted mb-0">Total Teachers</p>
+                                    <h2 class="mt-4 ff-secondary fw-semibold"><span class="counter-value" data-target="120">0</span></h2>
+                                    <p class="mb-0 text-muted"><span class="badge bg-light text-success mb-0">
+                                        <i class="ri-arrow-up-line align-middle"></i> 8.5 %
+                                    </span> vs. previous year</p>
+                                </div>
+                                <div>
+                                    <div class="avatar-sm flex-shrink-0">
+                                        <span class="avatar-title bg-info-subtle rounded-circle fs-2">
+                                            <i class="las la-chalkboard-teacher text-info"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-animate">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="fw-medium text-muted mb-0">Fee Collection</p>
+                                    <h2 class="mt-4 ff-secondary fw-semibold">$<span class="counter-value" data-target="125600">0</span></h2>
+                                    <p class="mb-0 text-muted"><span class="badge bg-light text-danger mb-0">
+                                        <i class="ri-arrow-down-line align-middle"></i> 2.8 %
+                                    </span> vs. target</p>
+                                </div>
+                                <div>
+                                    <div class="avatar-sm flex-shrink-0">
+                                        <span class="avatar-title bg-warning-subtle rounded-circle fs-2">
+                                            <i class="las la-dollar-sign text-warning"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -290,48 +336,196 @@
     </div>
 </div>
 
-<!-- Latest Updates and Tips -->
+<!-- Timetables and Attendance -->
 <div class="row">
-    <div class="col-xl-4">
-        <div class="card card-height-100">
+    <div class="col-xl-6">
+        <div class="card">
             <div class="card-header align-items-center d-flex">
-                <h4 class="card-title mb-0 flex-grow-1">School Updates</h4>
-            </div>
-            <div class="card-body p-0">
-                <div class="upcoming-scheduled">
-                    <div class="mini-stats-wid d-flex align-items-center mt-3 px-3">
-                        <div class="flex-shrink-0 avatar-sm">
-                            <span class="mini-stat-icon avatar-title rounded-circle text-success bg-success-subtle fs-4">
-                                <i class="las la-calendar"></i>
-                            </span>
-                        </div>
-                        <div class="flex-grow-1 ms-3">
-                            <h6 class="mb-1">Term 2 Registration</h6>
-                            <p class="text-muted mb-0">Starts on 15th March</p>
+                <h4 class="card-title mb-0 flex-grow-1">Recent Timetable Updates</h4>
+                <div class="flex-shrink-
+                <div class="flex-shrink-0">
+                    <div class="dropdown card-header-dropdown">
+                        <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="text-muted fs-18"><i class="mdi mdi-dots-vertical"></i></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#">View All</a>
+                            <a class="dropdown-item" href="#">Mark as Read</a>
                         </div>
                     </div>
-                    <!-- Add more updates as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Timetables and Attendance -->
+<div class="row">
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header align-items-center d-flex">
+                <h4 class="card-title mb-0 flex-grow-1">Recent Timetable Updates</h4>
+                <div class="flex-shrink-0">
+                    <a href="<?php echo e(route('admin.timetables.index')); ?>" class="btn btn-soft-primary btn-sm">
+                        <i class="ri-calendar-line align-middle"></i> View All
+                    </a>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-borderless table-nowrap align-middle mb-0">
+                        <thead class="table-light text-muted">
+                            <tr>
+                                <th scope="col">Class</th>
+                                <th scope="col">Subject</th>
+                                <th scope="col">Day</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Teacher</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Grade 10</td>
+                                <td>Mathematics</td>
+                                <td>Monday</td>
+                                <td>09:45 - 10:45</td>
+                                <td>Mr. Johnson</td>
+                            </tr>
+                            <tr>
+                                <td>Grade 8</td>
+                                <td>Science</td>
+                                <td>Tuesday</td>
+                                <td>11:15 - 12:15</td>
+                                <td>Mrs. Smith</td>
+                            </tr>
+                            <tr>
+                                <td>Grade 12</td>
+                                <td>Physics</td>
+                                <td>Wednesday</td>
+                                <td>14:15 - 15:15</td>
+                                <td>Dr. Williams</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="col-xl-4">
-        <div class="card card-height-100">
+    <div class="col-xl-6">
+        <div class="card">
             <div class="card-header align-items-center d-flex">
-                <h4 class="card-title mb-0 flex-grow-1">Quick Tips</h4>
+                <h4 class="card-title mb-0 flex-grow-1">Attendance Overview</h4>
+                <div class="flex-shrink-0">
+                    <button type="button" class="btn btn-soft-info btn-sm">
+                        <i class="ri-file-list-3-line align-middle"></i> Generate Report
+                    </button>
+                </div>
             </div>
-            <div class="card-body px-4">
-                <div class="d-flex align-items-center border-bottom pb-3">
-                    <div class="flex-grow-1">
-                        <h5 class="fs-15 mb-2">Academic Planning</h5>
-                        <p class="text-muted mb-0">Schedule regular meetings with teachers to track progress</p>
-                    </div>
-                    <div class="flex-shrink-0">
-                        <i class="ri-lightbulb-flash-line fs-2 text-warning"></i>
+            <div class="card-body">
+                <div id="attendance_chart" data-colors='["--vz-primary", "--vz-success", "--vz-warning"]' class="apex-charts" dir="ltr"></div>
+                <div class="mt-2 text-center">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="mt-2">
+                                <p class="text-muted mb-1">Present</p>
+                                <h4 class="fw-semibold">92.8%</h4>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mt-2">
+                                <p class="text-muted mb-1">Absent</p>
+                                <h4 class="fw-semibold">5.7%</h4>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mt-2">
+                                <p class="text-muted mb-1">Late</p>
+                                <h4 class="fw-semibold">1.5%</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Add more tips as needed -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Upcoming Events -->
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header align-items-center d-flex">
+                <h4 class="card-title mb-0 flex-grow-1">Upcoming School Events</h4>
+                <div class="flex-shrink-0">
+                    <a href="#" class="btn btn-soft-primary btn-sm">
+                        <i class="ri-calendar-event-line align-middle"></i> View Calendar
+                    </a>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card border card-border-primary">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0">
+                                        <div class="avatar-sm">
+                                            <div class="avatar-title bg-primary-subtle text-primary rounded-circle fs-4">
+                                                <i class="ri-award-line"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 class="card-title">Annual Sports Day</h5>
+                                        <p class="text-muted mb-0">15th March, 2023</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0">Annual sports competition with track and field events for all grades.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border card-border-success">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0">
+                                        <div class="avatar-sm">
+                                            <div class="avatar-title bg-success-subtle text-success rounded-circle fs-4">
+                                                <i class="ri-book-open-line"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 class="card-title">Science Exhibition</h5>
+                                        <p class="text-muted mb-0">22nd March, 2023</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0">Students will showcase their science projects and innovations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border card-border-warning">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0">
+                                        <div class="avatar-sm">
+                                            <div class="avatar-title bg-warning-subtle text-warning rounded-circle fs-4">
+                                                <i class="ri-user-voice-line"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 class="card-title">Parent-Teacher Meeting</h5>
+                                        <p class="text-muted mb-0">30th March, 2023</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0">End of term meeting to discuss student progress and performance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -349,8 +543,46 @@ var options = {
         name: "Performance",
         data: [65, 70, 75, 73, 80, 85, 83]
     }],
-    chart: { type: 'line', height: 350 },
-    // Add more chart configuration
+    chart: { 
+        type: 'line', 
+        height: 350,
+        toolbar: {
+            show: false
+        }
+    },
+    stroke: {
+        curve: 'smooth',
+        width: 3
+    },
+    xaxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+    },
+    colors: ['#0ab39c'],
+    fill: {
+        type: 'gradient',
+        gradient: {
+            shade: 'dark',
+            gradientToColors: ['#405189'],
+            shadeIntensity: 1,
+            type: 'horizontal',
+            opacityFrom: 1,
+            opacityTo: 1,
+        },
+    },
+    markers: {
+        size: 4,
+        colors: ['#0ab39c'],
+        strokeColors: '#fff',
+        strokeWidth: 2,
+        hover: {
+            size: 7,
+        }
+    },
+    yaxis: {
+        title: {
+            text: 'Performance Score'
+        },
+    }
 };
 var chart = new ApexCharts(document.querySelector("#performance_chart"), options);
 chart.render();
@@ -358,12 +590,72 @@ chart.render();
 // Subject Performance Chart
 var subjectOptions = {
     series: [85, 78, 82],
-    chart: { type: 'donut', height: 250 },
+    chart: { 
+        type: 'donut', 
+        height: 250 
+    },
     labels: ['Mathematics', 'Science', 'Languages'],
-    // Add more chart configuration
+    colors: ['#405189', '#0ab39c', '#f7b84b'],
+    legend: {
+        show: false
+    },
+    plotOptions: {
+        pie: {
+            donut: {
+                size: '70%',
+                labels: {
+                    show: true,
+                    name: {
+                        show: true,
+                    },
+                    value: {
+                        show: true,
+                        formatter: function (val) {
+                            return val + '%';
+                        }
+                    }
+                }
+            }
+        }
+    }
 };
 var subjectChart = new ApexCharts(document.querySelector("#subjects_chart"), subjectOptions);
 subjectChart.render();
+
+// Attendance Chart
+var attendanceOptions = {
+    series: [92.8, 5.7, 1.5],
+    chart: {
+        type: 'radialBar',
+        height: 250,
+    },
+    plotOptions: {
+        radialBar: {
+            dataLabels: {
+                name: {
+                    fontSize: '22px',
+                },
+                value: {
+                    fontSize: '16px',
+                },
+                total: {
+                    show: true,
+                    label: 'Total',
+                    formatter: function (w) {
+                        return '100%';
+                    }
+                }
+            },
+            hollow: {
+                size: '50%',
+            }
+        }
+    },
+    labels: ['Present', 'Absent', 'Late'],
+    colors: ['#405189', '#f06548', '#f7b84b'],
+};
+var attendanceChart = new ApexCharts(document.querySelector("#attendance_chart"), attendanceOptions);
+attendanceChart.render();
 
 // Live Clock
 function updateClock() {
@@ -440,6 +732,9 @@ function animateText(text) {
     // Animate characters
     chars.forEach((span, i) => {
         setTimeout(() => {
+            span.style.transition = 'all 0.3s ease';
+            span.style.opacity = '1';
+            span.style.transform
             span.style.transition = 'all 0.3s ease';
             span.style.opacity = '1';
             span.style.transform = 'translateY(0)';

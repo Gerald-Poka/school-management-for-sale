@@ -173,6 +173,32 @@
                     </div>
                 </li>
 
+                <!-- Student results -->
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarResults" data-bs-toggle="collapse" role="button">
+                        <i class="las la-chart-bar"></i> <span>Student Results</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarResults">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="<?php echo e(route('admin.results.index')); ?>" class="nav-link">
+                                    View Results
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="<?php echo e(route('admin.results.create')); ?>" class="nav-link">
+                                    Upload Results
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a href="<?php echo e(route('admin.results.reports')); ?>" class="nav-link">
+                                    Result Reports
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </li>
+
                 <!-- Settings -->
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarSettings" data-bs-toggle="collapse" role="button">

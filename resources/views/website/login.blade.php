@@ -53,7 +53,7 @@
                                                         <p class="fs-15 fst-italic">" Education is the passport to the future, for tomorrow belongs to those who prepare for it today. "</p>
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <p class="fs-15 fst-italic">" Our school management system helps teachers focus on what matters most - educating our future leaders. "</p>
+                                                        <p class="fs-15 fst-italic">" Our school management system helps teachers focus on what matters most. "</p>
                                                     </div>
                                                     <div class="carousel-item">
                                                         <p class="fs-15 fst-italic">" Streamlined administration means more time for quality education and student development. "</p>
@@ -87,7 +87,7 @@
                                                         </span>
                                                         <input type="email" class="form-control border-start-0 @error('email') is-invalid @enderror" 
                                                                name="email" id="email" value="{{ old('email') }}"
-                                                               placeholder="Enter email" required>
+                                                               placeholder="Enter email">
                                                         @error('email')
                                                             <span class="invalid-feedback" role="alert">
                                                                 <strong>{{ $message }}</strong>
@@ -98,7 +98,7 @@
 
                                                 <div class="mb-3">
                                                     <!-- <div class="float-end">
-                                                        <a href="https://wa.me/255754316484" class="text-muted fs-13">Forgot password?</a>
+                                                        <a href="https://wa.me/255754318464" class="text-muted fs-13">Forgot password?</a>
                                                     </div> -->
                                                     <label class="form-label" for="password-input">Password</label>
                                                     <div class="input-group auth-pass-inputgroup">
@@ -106,7 +106,7 @@
                                                             <i class="ri-lock-2-line text-muted"></i>
                                                         </span>
                                                         <input type="password" class="form-control border-start-0 pe-5 password-input @error('password') is-invalid @enderror"
-                                                               name="password" placeholder="Enter password" id="password-input" required>
+                                                               name="password" placeholder="Enter password" id="password-input">
                                                         <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted password-addon"
                                                                 type="button" id="password-addon" style="z-index: 10; padding-top: 12px;">
                                                             <i class="ri-eye-fill align-middle"></i>
@@ -141,7 +141,7 @@
                                         
                                         <div class="mt-5 text-center">
                                             <p class="mb-0 text-muted">For Password and Account? 
-                                                <a href="https://wa.me/255754316484" target="_blank" class="fw-semibold text-primary">
+                                                <a href="https://wa.me/255754318464" target="_blank" class="fw-semibold text-primary">
                                                     <i class="ri-whatsapp-line align-middle"></i> Contact Administrator
                                                 </a>
                                             </p>

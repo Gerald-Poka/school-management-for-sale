@@ -52,4 +52,12 @@ class Subject extends Model
     {
         return $this->belongsTo(Subject::class);
     }
+
+    /**
+     * Get the results for the subject.
+     */
+    public function results()
+    {
+        return $this->hasMany(Result::class);
+    }
 }

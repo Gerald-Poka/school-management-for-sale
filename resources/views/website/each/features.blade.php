@@ -1,4 +1,4 @@
-<section class="section py-5" id="features" style="background-color: #faf8f5;">
+<section class="section py-5" id="features" style="background: url('{{ URL::asset('school/bg-pattern.png') }}') center/cover no-repeat;">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">

@@ -237,6 +237,33 @@ class TimetableController extends Controller
             ], 500);
         }
     }
+    public function edit(Timetable $timetable)
+{
+    $academicLevels = AcademicLevel::orderBy('order')->get();
+    $subjects = Subject::orderBy('name')->get();
+    $timeSlots = Timetable::generateTimeSlots();
+    
+    // Get existing slot data
+    $slotData = [];
+    foreach ($timetable->slots as $slot) {
+        if ($slot->type === 'class') {
+            $slotData[$slot->day_of_week][$slot->start_time] = [
+                'subject_id' => $slot->subject_id,
+                'teacher_id' => $slot->teacher_id,
+                'slot_id' => $slot->id
+            ];
+        }
+    }
+    
+    return view('admin.timetables.edit', compact(
+        'timetable',
+        'academicLevels',
+        'subjects',
+        'timeSlots',
+        'slotData'
+    ));
+}
+
 
     public function getSubjectTeachers(TimetableSlot $slot)
     {

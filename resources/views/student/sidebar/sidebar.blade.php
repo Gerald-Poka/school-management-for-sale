@@ -70,15 +70,15 @@
                 </li>
 
                 <!-- Assignments -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link menu-link" href="#">
                         <i class="las la-tasks"></i> <span>Assignments</span>
                     </a>
-                </li>
+                </li> -->
 
                 <!-- Exam Results -->
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#">
+                    <a class="nav-link menu-link" href="{{ route('student.results.index') }}">
                         <i class="las la-chart-bar"></i> <span>Exam Results</span>
                     </a>
                 </li>

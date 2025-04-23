@@ -50,7 +50,7 @@
                             <div class="flex-grow-1 ms-3">
                                 <h5 class="fs-16">WhatsApp</h5>
                                 <p class="text-muted mb-0">
-                                    <a href="https://wa.me/255754316484" class="text-muted">+255 754 316 484</a>
+                                    <a href="https://wa.me/255754318464" class="text-muted">+255 754 318 464</a>
                                 </p>
                             </div>
                         </div>

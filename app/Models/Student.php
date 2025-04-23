@@ -68,6 +68,11 @@ class Student extends Model
         return $this->hasMany(Invoice::class);
     }
 
+    public function subjects()
+    {
+        return $this->belongsToMany(Subject::class, 'student_subject');
+    }
+
     public static function generateAdmissionNumber()
     {
         $year = date('Y');
